@@ -1,0 +1,13 @@
+[project]
+name = "words_on_stream"
+version = "1"
+authors = [{name = "ashrasmun"}]
+requires-python = ">= 3.12"
+readme = "README.md"
+license = {text = "MIT License"}
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pytest"]
+
+[project.scripts]
+wos = "words_on_stream:main"
