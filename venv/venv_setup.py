@@ -5,7 +5,6 @@ import subprocess
 def run_py(command: str) -> subprocess.CompletedProcess:
     py_ver = os.environ["min_py_version"]
     cmd = f"py -{py_ver} {command}"
-    print(cmd)
     return subprocess.run(
         cmd,
         stdout=subprocess.DEVNULL,
